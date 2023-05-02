@@ -16,7 +16,7 @@ app.get("/" , (req,res)=>{
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect("mongodb+srv://harsh49566:hxd577@cluster0.60ci5n8.mongodb.net/notes_db?retryWrites=true&w=majority")
 .then(()=>{
     app.listen(PORT, ()=>{
         console.log(`Serve has started at ${PORT}`)
